@@ -575,6 +575,73 @@
             transform: translateX(5px);
         }
 
+        /* Business Info Section */
+        .business-info {
+            padding: 8rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .info-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #e91e63;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-icon {
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #0a0a0a;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-item span {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .info-item a {
+            color: #5b4fc7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-item a:hover {
+            color: #e91e63;
+        }
+
         .footer-bottom {
             max-width: 1400px;
             margin: 0 auto;
@@ -759,6 +826,69 @@
         </div>
     </section>
 
+    <section id="about" class="business-info">
+        <div class="section-header">
+            <div class="section-label">ABOUT US</div>
+            <h2 class="section-title">Official Medical Practice</h2>
+        </div>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Medical Director</h3>
+                <div class="info-item">
+                    <span class="info-icon">👨‍⚕️</span>
+                    <div>
+                        <strong>Dr. Abdelrahman Gamal</strong>
+                        <span>Founder & Medical Director<br>OncoBot Egypt - Breast Cancer Support Services</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Medical Services</h3>
+                <div class="info-item">
+                    <span class="info-icon">🏥</span>
+                    <div>
+                        <strong>Specialized Services</strong>
+                        <span>• Breast Cancer Consultation & Support<br>
+                        • AI-Powered Health Guidance<br>
+                        • Early Detection Screening Programs<br>
+                        • Patient Education & Awareness<br>
+                        • Treatment Navigation Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Clinic Location</h3>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <strong>Address</strong>
+                        <span>10 St Lewaa Abdelaziz Ali<br>El Nozha, Cairo<br>Egypt</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <span><a href="tel:+201106117423">+20 11 0611 7423</a></span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <strong>Email</strong>
+                        <span><a href="mailto:info@oncoegypt.com">info@oncoegypt.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact-section">
         <div class="section-header">
             <div class="section-label">GET IN TOUCH</div>
@@ -773,9 +903,9 @@
                 <div class="contact-icon">💬</div>
                 <h3>Join Community</h3>
             </a>
-            <a href="#about" class="contact-card">
-                <div class="contact-icon">📖</div>
-                <h3>Learn More</h3>
+            <a href="tel:+201106117423" class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Call Us</h3>
             </a>
         </div>
     </section>
@@ -803,10 +933,12 @@
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Connect</h4>
+                <h4>Contact</h4>
                 <ul>
-                    <li><a href="mailto:info@oncoegypt.com">Email</a></li>
-                    <li><a href="https://chat.whatsapp.com/GDtbKcB8xVu711SANUG3Yy?mode=hqrc" target="_blank">WhatsApp</a></li>
+                    <li><strong style="color: #e91e63;">Dr. Abdelrahman Gamal</strong></li>
+                    <li><a href="tel:+201106117423">+20 11 0611 7423</a></li>
+                    <li><a href="mailto:info@oncoegypt.com">info@oncoegypt.com</a></li>
+                    <li style="color: #999; margin-top: 0.5rem;">10 St Lewaa Abdelaziz Ali<br>El Nozha, Cairo, Egypt</li>
                 </ul>
             </div>
         </div>
